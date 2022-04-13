@@ -412,12 +412,12 @@ footer {
 .footer-flex {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-left {
   display: flex;
   flex-direction: column;
-  margin-right: 70px;
 }
 
 .logo-studio-bottom {
@@ -479,6 +479,69 @@ footer {
 .social-list-item:not(:last-child) {
   margin-right: 10px;
 }
+
+.subscribe-input-conteiner{
+  display: flex;
+}
+
+.footer-subscribe-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-theme-background);
+  margin-bottom: 20px;
+}
+
+.subscribe-email-input {
+  width: 358px;
+  height: 50px;
+  background-color: var(--dark-theme-background);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  padding-left: 16px;
+  color: var(--light-theme-background);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-email-input:focus {
+  outline: none;
+  border-color: var(--accept-item-text-color);
+}
+
+.footer-subscribe-btn {
+  display: flex;
+  font-family: inherit;
+  background-color: var(--accept-item-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--light-theme-background);
+  cursor: pointer;
+  padding: 10px 28px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+    background-color: #188ce8;
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: var(--light-theme-background);
+}
+
 
 /* ===== PORTFOLIO ===== */
 
